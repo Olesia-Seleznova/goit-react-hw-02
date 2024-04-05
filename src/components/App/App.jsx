@@ -47,7 +47,7 @@ export default function App() {
       <Description />
       <Options
         onUpdateFeedback={updateFeedback}
-        onresetFeedbacks={resetFeedbacks}
+        onResetFeedbacks={resetFeedbacks}
       />
       {totalFeedback > 0 ? (
         <Feedback

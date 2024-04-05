@@ -16,7 +16,6 @@ export default function Options({ onUpdateFeedback, onResetFeedbacks }) {
       <button className={css.button} onClick={() => onUpdateFeedback("bad")}>
         Bad
       </button>
-
       <button className={css.button} onClick={onResetFeedbacks}>
         Reset
       </button>
