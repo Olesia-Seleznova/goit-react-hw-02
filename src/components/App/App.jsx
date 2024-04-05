@@ -45,13 +45,15 @@ export default function App() {
   return (
     <div>
       <Description />
-      <Options onUpdateFeedback={updateFeedback} />
+      <Options
+        onUpdateFeedback={updateFeedback}
+        onresetFeedbacks={resetFeedbacks}
+      />
       {totalFeedback > 0 ? (
         <Feedback
           values={feedbacks}
           totalFeedback={totalFeedback}
           positiveFeedback={positiveFeedback}
-          resetFeedbacks={resetFeedbacks}
         />
       ) : (
         <Notification message="No feedback given" />

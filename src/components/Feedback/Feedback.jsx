@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-
 import css from "../Feedback/Feedback.module.css";
 
 export default function Feedback({

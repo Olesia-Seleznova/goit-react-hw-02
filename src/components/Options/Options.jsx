@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import css from "../Options/Options.module.css";
 
-export default function Options({ onUpdateFeedback, resetFeedbacks }) {
+export default function Options({ onUpdateFeedback, onResetFeedbacks }) {
   return (
     <>
       <button className={css.button} onClick={() => onUpdateFeedback("good")}>
@@ -17,7 +17,7 @@ export default function Options({ onUpdateFeedback, resetFeedbacks }) {
         Bad
       </button>
 
-      <button className={css.button} onClick={resetFeedbacks}>
+      <button className={css.button} onClick={onResetFeedbacks}>
         Reset
       </button>
     </>
